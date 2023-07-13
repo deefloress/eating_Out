@@ -74,4 +74,8 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
+# Discussion and Conclution 
+
+
+Base on the results, we reject the null hypothesis because the p-value is so small, 0.0008179 , concluding that the there is a difference in the frequency of eating out based on race. 
 
