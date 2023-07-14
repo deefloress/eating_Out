@@ -57,7 +57,7 @@ barchartGC(~race+eatout,data=mydata,type="percent")
 
 The bar chart suggests that there is a difference in the percentage of white ethnicity to other ethnicity in eating out.
 
-## Numerical Description 
+### Numerical Description 
 
 
 
@@ -67,15 +67,21 @@ rowPerc(table1)
 colPerc(table1)
 
 ```
+In this numerical descriptions states and shows the frequency of eating out in white ethnicity as apposed to black and other.The graph shows that white ethnicity  as frequency of eating out is more than black and other ethnicing 
+
 ### Inferential results
 ```{r}
 chisq.test(table1)
 chisqtestGC(table1)
-fisher.test(table1)
+fisherXY(mydata$race,mydata$eatout,printAll=TRUE)
 ```
+
+Chi squared test shows that the P value is 0.0008179, we see the number is small that we reject the null hypothesis.
+the fisher exact test for count data shows that the p value 0.001208
+is also very small that we reject the null hypothesis.
 
 # Discussion and Conclution 
 
 
-Base on the results, we reject the null hypothesis because the p-value is so small, 0.0008179 , concluding that the there is a difference in the frequency of eating out based on race. 
+Base on the results, we reject the null hypothesis because the p-value is so small, 0.0008179 , concluding that the there is a difference in the frequency of eating out among the ethnicity's.
 
