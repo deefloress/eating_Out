@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-Is there a difference in ethnicity in how frequently they eat?
+Is there a difference based on frequency in ethnicity's in how often they eat out?
 
 ## There were two years in which the General Social Survey asked about the frequency of eating out.
 ### Find those years and for the first year the question was asked download that years data in a stata format - its name will be "GSSxxxx.dta" where the xxxx is replaced by the year.  For example if the year was 1983 its name would be GSS1983.dta. Your assignment is to download the GSS yearly dataset for the first year the question was asked and then  write up the answer to the question by editing the  code block in line 31 to eval=TRUE and finish the job. 
@@ -67,7 +67,7 @@ rowPerc(table1)
 colPerc(table1)
 
 ```
-In this numerical descriptions states and shows the frequency of eating out in white ethnicity as apposed to black and other.The graph shows that white ethnicity  as frequency of eating out is more than black and other ethnicing 
+In this numerical descriptions states and shows the frequency of eating out in white ethnicity as apposed to black and other.The table shows that white ethnicity  as frequency of eating out is more than black and other ethnicity 
 
 ### Inferential results
 ```{r}
@@ -77,7 +77,7 @@ fisherXY(mydata$race,mydata$eatout,printAll=TRUE)
 ```
 
 Chi squared test shows that the P value is 0.0008179, we see the number is small that we reject the null hypothesis.
-the fisher exact test for count data shows that the p value 0.001208
+The fisher XY test for count data shows that the p value 0.001208
 is also very small that we reject the null hypothesis.
 
 # Discussion and Conclution 
